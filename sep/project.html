@@ -1,0 +1,956 @@
+<div class="table-wrap">
+    <div class="table-navbar">
+        <ul class="nav nav-tabs" id="tabletab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="clients1-tab" data-toggle="tab" href="#clients1" role="tab" aria-controls="clients1" aria-selected="true">Новая - Продажа</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " id="clients2-tab" data-toggle="tab" href="#clients2" role="tab" aria-controls="clients2" aria-selected="false">Просмотр - Работа</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="clients3-tab" data-toggle="tab" href="#clients3" role="tab" aria-controls="clients3" aria-selected="false">Архив</a>
+            </li>
+            <div class="ml-auto">
+                <a href="#" class="btn control-btn color-blue mr-3"><img src="images/save-2-w.png" alt="">Сохранить</a>
+            </div>
+        </ul>
+    </div>
+    <div class="tab-content" id="clientstabcontent">
+        <div class="tab-pane fade show active" id="clients1" role="tabpanel" aria-labelledby="clients1-tab">
+            <div class="table-navbar">
+                <ul class="nav nav-tabs" id="tabletab1" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="project-tab" data-toggle="tab" href="#project" role="tab" aria-controls="project" aria-selected="true">Проекты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="plist-tab" data-toggle="tab" href="#plist" role="tab" aria-controls="plist" aria-selected="false">Список проектов</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content" id="projecttabcontent">
+                <div class="tab-pane fade show active" id="project" role="tabpanel" aria-labelledby="project-tab">
+                    <div class="table-filter row justify-content-between">
+                        <div class="col-12">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="table-filter row justify-content-between pt-0">
+                                <div class="d-flex justify-content-start align-items-center col-12">
+                                    <label for="" class="mr-3 mw-101">Клиент</label>
+                                    <input type="text" class="form-control border-red w-220 ml-auto" value="000061-2">
+                                    <span class="ml-2 clients-modal" data-toggle="modal" data-target="#clientsModal"><img src="images/dot-btn-v.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="table-filter row justify-content-between pt-0">
+                                <div class="d-flex justify-content-start align-items-center pl-3">
+                                    <label for="" class="mr-3 mw-101">Как нежилое</label>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center col pl-0">
+                                    <select name="" id="" class="custom-select"></select>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center col pl-0">
+                                    <select name="" id="" class="custom-select"></select>
+                                </div>
+                            </div>
+                            <div class="table-filter row justify-content-between mt-1 pt-0">
+                                <div class="d-flex justify-content-start align-items-center px-3">
+                                    <label class="mr-3">Цена</label>
+                                    <input type="text" class="form-control border-bl mw-70 mr-3">
+                                    <span>тыс. USD</span>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center pr-3">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="com1">
+                                        <label class="custom-control-label pt-1" for="com1"><strong>в т.ч. Комиссия</strong></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class=" col-md-12">
+                                    <div class="nf-heading text-center">
+                                        Местоположение
+                                    </div>
+                                    <div class="nf-gr">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mr-2 mw-60">Страна</label>
+                                                    <input type="text" class="form-control gb-input border-bl">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mr-2 mw-60">Обл.</label>
+                                                    <input type="text" class="form-control gb-input border-bl">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mr-2 mw-60">Н.п.</label>
+                                                    <select name="" id="" class="custom-select border-bl"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mr-2 mw-60">Р-н н. п.</label>
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mr-2 mw-60">Улица</label>
+                                                    <select name="" id="" class="custom-select border-bl"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mr-2 mw-60">угол</label>
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mr-2 mw-60">Дом</label>
+                                                    <input type="text" class="form-control border-bl">
+                                                    <label for="" class="mx-2 mw-50">/Корп.</label>
+                                                    <input type="text" class="form-control mr-2 border-bl">
+                                                    <input type="text" class="form-control ">
+                                                    <label for="" class="mx-2">Кв.</label>
+                                                    <input type="text" class="form-control mr-2 border-bl">
+                                                    <input type="text" class="form-control ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mr-2 mw-60">Метро</label>
+                                                    <select name="" id="" class="custom-select mr-3"></select>
+                                                    <input type="text" class="form-control ml-auto mw-60">
+                                                    <label for="" class="ml-2">мин.</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mr-2 mw-60"> </label>
+                                                    <select name="" id="" class="custom-select mr-3"></select>
+                                                    <input type="text" class="form-control ml-auto mw-60">
+                                                    <label for="" class="ml-2">мин.</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mr-2 mw-60">Ист. р-н</label>
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mr-2 mw-60">Лок. об.</label>
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mr-2 mw-60">Уст. наим.</label>
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mr-2 mw-60">ЖК</label>
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ////////////// Характеристики здания ////////////////-->
+                            <div class="row mt-5">
+                                <div class=" col-md-12">
+                                    <div class="nf-heading text-center">
+                                        Характеристики здания
+                                    </div>
+                                    <div class="">
+                                        <div class="row mt-2">
+                                            <div class="d-flex justify-content-between align-items-center col-md-12">
+                                                <label for="" class="mw-101">Проект</label>
+                                                <select name="" id="" class="custom-select border-bl"></select>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="d-flex justify-content-between align-items-center col-md-12">
+                                                <label for="" class="mw-101">Конструктив</label>
+                                                <select name="" id="" class="custom-select border-bl"></select>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="d-flex justify-content-between align-items-center col-md-12">
+                                                <label for="" class="mw-101">Внеш. стены</label>
+                                                <select name="" id="" class="custom-select border-bl"></select>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="d-flex justify-content-between align-items-center col-md-12">
+                                                <label for="" class="mw-101">Перекрытия</label>
+                                                <select name="" id="" class="custom-select border-bl"></select>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="d-flex justify-content-between align-items-center col-md-12">
+                                                <label for="" class="mw-101">Крыша</label>
+                                                <select name="" id="" class="custom-select"></select>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="d-flex justify-content-between align-items-center col-md-12">
+                                                <label for="" class="mw-101">Планировка</label>
+                                                <select name="" id="" class="custom-select"></select>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="pereplan1">
+                                                    <label class="custom-control-label pt-1" for="pereplan1">Перепл.</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="uzakon1">
+                                                    <label class="custom-control-label pt-1" for="uzakon1">Узакон.</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ////////////// Окружение ////////////////-->
+                            <div class="row mt-5">
+                                <div class=" col-md-12">
+                                    <div class="nf-heading text-center">
+                                        Окружение
+                                    </div>
+                                    <div class="nf-gr">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mw-101">Расп. дома</label>
+                                                    <select name="" id="" class="custom-select border-bl"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 pl-0">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mw-101">Инфр-ра</label>
+                                                    <select name="" id="" class="custom-select border-bl"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 pl-0">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class=" mw-101"> </label>
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 pl-0">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mw-101">Трансп.</label>
+                                                    <select name="" id="" class="custom-select border-bl"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 pl-0">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mw-101">Заезд</label>
+                                                    <select name="" id="" class="custom-select border-bl"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 pl-0">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mw-101">Благоустр.</label>
+                                                    <select name="" id="" class="custom-select border-bl"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 pl-0">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mw-101"></label>
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 pl-0">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mw-101">Фасад</label>
+                                                    <select name="" id="" class="custom-select border-bl"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ////////////// .Окружение ////////////////-->
+                            <div class="row justify-content-between my-3">
+                                <div class="d-flex justify-content-start align-items-center pl-3">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="ee380">
+                                        <label class="custom-control-label pt-1" for="ee380">380 V</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="signal2">
+                                        <label class="custom-control-label pt-1" for="signal2">Сигнал.</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center ">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="controlv1">
+                                        <label class="custom-control-label pt-1" for="controlv1">Контр. вх.</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end align-items-center ">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="wifi2">
+                                        <label class="custom-control-label" for="wifi2">Wi-Fi</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end align-items-center pr-3">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="smart2">
+                                        <label class="custom-control-label" for="smart2"><strong>SMART</strong></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class=" col-md-12">
+                                    <div class="nf-heading text-center">
+                                        Ориентация
+                                    </div>
+                                    <div class="nf-gr">
+                                        <div class="d-flex justify-content-start align-items-center  mb-2">
+                                            <label for="" class="mw-101">Кол-во стор.</label>
+                                            <input type="text" class="form-control mw-45 border-bl">
+                                            <label for="" class="mw-80 ml-3">Расп. на эт.</label>
+                                            <select name="" id="" class="custom-select border-bl"></select>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center  mb-2">
+                                            <label for="" class="mw-101">Кухня</label>
+                                            <select name="" id="" class="custom-select border-bl mw-70"></select>
+                                            <label for="" class="mw-80 ml-auto">Гостиная</label>
+                                            <select name="" id="" class="custom-select mw-70"></select>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center  mb-2">
+                                            <label for="" class="mw-101">Кухня</label>
+                                            <select name="" id="" class="custom-select border-bl mw-70"></select>
+                                            <select name="" id="" class="custom-select mw-70 mx-2"></select>
+                                            <select name="" id="" class="custom-select mw-70"></select>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center  mb-2">
+                                            <label for="" class="mw-101">Расп. на эт.</label>
+                                            <select name="" id="" class="custom-select border-bl"></select>
+                                            <select name="" id="" class="custom-select  ml-2"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ////////////// .Ориентация ////////////////-->
+                            <div class="row mt-5">
+                                <div class=" col-md-12">
+                                    <div class="nf-heading text-center">
+                                        Атмосфера
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="d-flex justify-content-between align-items-center  mb-2">
+                                            <label for="" class="mw-80">Освещ-ие</label>
+                                            <select name="" id="" class="custom-select "></select>
+                                            <select name="" id="" class="custom-select  ml-2"></select>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center  mb-2">
+                                            <label for="" class="mw-80">Освещ-ть</label>
+                                            <select name="" id="" class="custom-select border-bl"></select>
+                                            <select name="" id="" class="custom-select  ml-2"></select>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center  mb-2">
+                                            <label for="" class="mw-80">Гамма</label>
+                                            <select name="" id="" class="custom-select border-bl"></select>
+                                            <select name="" id="" class="custom-select  ml-2"></select>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center  mb-2">
+                                            <label for="" class="mw-80">Стиль</label>
+                                            <select name="" id="" class="custom-select border-bl mr-1"></select>
+                                            <div class="custom-control custom-checkbox mw-150 mr-3 ml-3">
+                                                <input type="checkbox" class="custom-control-input " id="avdiz2">
+                                                <label class="custom-control-label pt-1" for="avdiz2">Авторский дизайн</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ////////////// .Атмосфера ////////////////-->
+                        </div>
+                        <!-- right column -->
+                        <div class="col-lg-6">
+                            <div class="row justify-content-between">
+                                <div class="col-md-6">
+                                    <div class="d-flex justify-content-start align-items-center  mb-2">
+                                        <label for="" class="mw-60">Посред.</label>
+                                        <input type="text" class="form-control gb-input border-bl">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex justify-content-start align-items-center  mb-2">
+                                        <label for="" class="mw-50">Цель</label>
+                                        <select name="" id="" class="custom-select border-bl"></select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-between mb-3">
+                                <div class="d-flex justify-content-start align-items-center pl-3">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="likv2">
+                                        <label class="custom-control-label pt-1" for="likv2">Ликв.</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="sroch1">
+                                        <label class="custom-control-label pt-1" for="sroch1">Сроч.</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="nfond1">
+                                        <label class="custom-control-label pt-1" for="nfond1">Рег. как неж. фонд</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center pr-3">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="snos1">
+                                        <label class="custom-control-label pt-1" for="snos1">Под снос</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-between">
+                                <div class="col-md-12">
+                                    <div class="nf-gr">
+                                        <div class="row justify-content-between">
+                                            <div class="d-flex justify-content-start align-items-center px-3">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="opspace1" name="opspaceRadio" class="custom-control-input">
+                                                    <label class="custom-control-label mw-76" for="opspace1">Open Space</label>
+                                                </div>
+                                                <div class="custom-control custom-radio ml-3">
+                                                    <input type="radio" id="zhkom1" name="opspaceRadio" class="custom-control-input">
+                                                    <label class="custom-control-label" for="zhkom1">Кол-во жил. комн</label>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-start align-items-center px-3">
+                                                <input type="text" class="form-control border-bl mw-70 mr-2" value="1000.0">
+                                                <span class="mw-30">шт.</span>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-between mt-2">
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center">
+                                                    <label for="" class="mw-80"><strong>Общ. пл.</strong></label>
+                                                    <input type="text" class="form-control mw-70 border-bl mr-2" value="1000.0">
+                                                    <span class="mw-30">кв.м</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <label for="" class="mw-80">Жилая</label>
+                                                    <input type="text" class="form-control mw-70 mr-2" value="1000.0">
+                                                    <span class="mw-30">кв.м</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-between mt-2">
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center">
+                                                    <label for="" class="mw-80">Кухня</label>
+                                                    <input type="text" class="form-control mw-70 border-bl mr-2" value="1000.0">
+                                                    <span class="mw-30">кв.м</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <label for="" class="mw-80">Потолки</label>
+                                                    <input type="text" class="form-control mw-70 mr-2" value="1000.0">
+                                                    <span class="mw-30">м</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-between mt-2">
+                                            <div class="col-md-5 d-flex  align-items-center">
+                                                <select name="" id="" class="custom-select"></select>
+                                            </div>
+                                            <div class="col px-0 d-flex  align-items-center">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="ker2">
+                                                    <label class="custom-control-label pt-1" for="ker2">Кухня-эркер</label>
+                                                </div>
+                                            </div>
+                                            <div class="col pl-0 d-flex  align-items-center">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="ger2">
+                                                    <label class="custom-control-label pt-1" for="ger2">Гостиная-эрк.</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-between mt-2">
+                                            <div class="col pr-0">
+                                                <div class="d-flex justify-content-start align-items-center">
+                                                    <label for="" class="mw-80"><strong>Этаж</strong></label>
+                                                    <input type="text" class="form-control mw-70 border-bl mr-2" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="col-7 pl-0">
+                                                <div class="d-flex justify-content-start align-items-center">
+                                                    <label for="" class="mw-60">Вход</label>
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-between mt-2">
+                                            <div class="col pr-0">
+                                                <div class="d-flex justify-content-start align-items-center">
+                                                    <label for="" class="mw-80">Этажнос.</label>
+                                                    <input type="text" class="form-control mw-70 border-bl mr-2" value="1">
+                                                    <span class="ml-2">(секц.)</span>
+                                                </div>
+                                            </div>
+                                            <div class="col d-flex justify-content-start align-items-center">
+                                                <div class="custom-control custom-checkbox ml-1">
+                                                    <input type="checkbox" class="custom-control-input" id="mur2">
+                                                    <label class="custom-control-label pt-1" for="mur2">Многоуровневая</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="d-flex justify-content-start align-items-center px-3">
+                                    <div class="custom-control custom-radio mr-5">
+                                        <input type="radio" id="tehet1" name="customRadio3" class="custom-control-input">
+                                        <label class="custom-control-label" for="tehet1">Тех этаж</label>
+                                    </div>
+                                    <div class="custom-control custom-radio mr-5">
+                                        <input type="radio" id="mans2" name="customRadio3" class="custom-control-input">
+                                        <label class="custom-control-label" for="mans2">Мансарда</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="prist1">
+                                        <label class="custom-control-label" for="prist1">Пристройка</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="d-flex justify-content-start align-items-center px-3">
+                                    <label for="">Кол-во: </label>
+                                    <span class="mx-3">балконов</span>
+                                    <input type="text" class="form-control mw-50">
+                                    <span class="ml-2">шт</span>
+                                    <span class="pluss">+</span>
+                                    <label for="">лоджий</label>
+                                    <input type="text" class="form-control mw-50 mx-2">
+                                    <span>шт</span>
+                                </div>
+                            </div>
+                            <div class="row justify-content-between">
+                                <div class="col-md-12">
+                                    <div class="nf-gr">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="d-flex justify-content-start align-items-center mb-2">
+                                                    <label for="" class="mw-80">Общ. сост.</label>
+                                                    <select name="" id="" class="custom-select border-bl"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 pl-0">
+                                                <div class="d-flex justify-content-start align-items-center mb-2">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="mbyt1">
+                                                        <label class="custom-control-label" for="mbyt1">Меб. / Быт. тех</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="d-flex justify-content-start align-items-center mb-2">
+                                                    <label for="" class="mw-80">Ремонт</label>
+                                                    <select name="" id="" class="custom-select border-bl"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 pl-0">
+                                                <div class="d-flex justify-content-start align-items-center mb-2">
+                                                    <select name="" id="" class="custom-select border-bl"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-between mt-3">
+                                <div class="col-md-6">
+                                    <div class="d-flex justify-content-start align-items-center  mb-2">
+                                        <label for="" class="mw-70">С/У №1</label>
+                                        <select name="" id="" class="custom-select border-bl"></select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex justify-content-start align-items-center  mb-2">
+                                        <label for="" class="mw-70">Приборы</label>
+                                        <select name="" id="" class="custom-select"></select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex justify-content-start align-items-center  mb-2">
+                                        <label for="" class="mw-70">С/У №2</label>
+                                        <select name="" id="" class="custom-select"></select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex justify-content-start align-items-center  mb-2">
+                                        <label for="" class="mw-70">Приборы</label>
+                                        <select name="" id="" class="custom-select"></select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-between mt-3">
+                                <div class="col-md-12">
+                                    <div class="nf-gr">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="d-flex justify-content-start align-items-center mb-2">
+                                                    <label for="" class="mw-80"><strong>Отоплен.</strong></label>
+                                                    <select name="" id="" class="custom-select border-bl"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 pl-0">
+                                                <div class="d-flex justify-content-start align-items-center mb-2">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="kotel2">
+                                                        <label class="custom-control-label" for="kotel2">2-конт. котёл</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 d-flex justify-content-between align-items-center mb-2">
+                                                <label for="" class="mr-2">Трубы/стояки ОТП</label>
+                                                <select name="" id="" class="custom-select mw-120"></select>
+                                                <select name="" id="" class="custom-select mw-120"></select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 d-flex justify-content-end align-items-center mb-2">
+                                                <div class="custom-control custom-checkbox mw-120 mr-4">
+                                                    <input type="checkbox" class="custom-control-input" id="sot2">
+                                                    <label class="custom-control-label" for="sot2">Счётчик ОТП</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mw-120">
+                                                    <input type="checkbox" class="custom-control-input" id="sgaz2">
+                                                    <label class="custom-control-label" for="sgaz2">Счётчик ГАЗ</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="d-flex justify-content-start align-items-center mb-2">
+                                                    <label for="" class="mw-80"><strong>Вода Г</strong></label>
+                                                    <select name="" id="" class="custom-select border-bl"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 pl-0">
+                                                <div class="d-flex justify-content-start align-items-center mb-2">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="kol2">
+                                                        <label class="custom-control-label" for="kol2">Колонка</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 d-flex justify-content-between align-items-center mb-2">
+                                                <label for="" class="mr-2">Трубы/стояки, Г/Х</label>
+                                                <select name="" id="" class="custom-select mw-120"></select>
+                                                <select name="" id="" class="custom-select mw-120"></select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 d-flex justify-content-end align-items-center mb-2">
+                                                <div class="custom-control custom-checkbox mw-120 mr-4">
+                                                    <input type="checkbox" class="custom-control-input" id="sgor2">
+                                                    <label class="custom-control-label" for="sgor2">Счётчик Г</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mw-120">
+                                                    <input type="checkbox" class="custom-control-input" id="shol2">
+                                                    <label class="custom-control-label" for="shol2">Счётчик Х</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- -->
+                            <div class="row justify-content-between mt-3">
+                                <div class="col-md-7">
+                                    <div class="d-flex justify-content-start align-items-center  mb-2">
+                                        <label for="" class="mw-45">Окна</label>
+                                        <select name="" id="" class="custom-select border-bl"></select>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 pl-0">
+                                    <div class="d-flex justify-content-start align-items-center  mb-2">
+                                        <select name="" id="" class="custom-select"></select>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="d-flex justify-content-start align-items-center  mb-2">
+                                        <label for="" class="mw-45">Дв. вх.</label>
+                                        <select name="" id="" class="custom-select border-bl"></select>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 pl-0">
+                                    <div class="d-flex justify-content-start align-items-center  mb-2">
+                                        <select name="" id="" class="custom-select"></select>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="d-flex justify-content-start align-items-center  mb-2">
+                                        <label for="" class="mw-45">Вн. дв.</label>
+                                        <select name="" id="" class="custom-select border-bl"></select>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 pl-0">
+                                    <div class="d-flex justify-content-start align-items-center  mb-2">
+                                        <select name="" id="" class="custom-select"></select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-between mt-3">
+                                <div class="col-md-12">
+                                    <div class="nf-gr">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mw-70">Подсобки</label>
+                                                    <select name="" id="" class="custom-select border-bl"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mw-70">Тамбур</label>
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mw-70">Гараж</label>
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mw-70">Стоянка</label>
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mw-70">Паркинг</label>
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mw-70">Инт. / ТВ</label>
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="mw-70">Операт.</label>
+                                                    <select name="" id="" class="custom-select"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-between mt-3">
+                                <div class="col-md-7">
+                                    <div class="d-flex justify-content-start align-items-center  mb-2">
+                                        <label for="" class="mw-70"><strong>Место</strong></label>
+                                        <select name="" id="" class="custom-select border-bl"></select>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 pl-0">
+                                    <div class="d-flex justify-content-start align-items-center  mb-2">
+                                        <select name="" id="" class="custom-select"></select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-between mt-3">
+                                <div class="col-md-12">
+                                    <div class="nf-heading text-center">
+                                        Уровни (от 1 до 5, 5 = max)
+                                    </div>
+                                    <div class="nf-gr">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="">Престижности ≥</label>
+                                                    <select name="" id="" class="custom-select mw-45 ml-auto"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="">Тишины ≥</label>
+                                                    <select name="" id="" class="custom-select mw-45 ml-auto"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="">Безопасности ≥</label>
+                                                    <select name="" id="" class="custom-select mw-45 ml-auto"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                    <label for="" class="col-6 px-0">Социальный статус соседей</label>
+                                                    <select name="" id="" class="custom-select "></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-between mt-3">
+                                <div class="col-md-12">
+                                    <div class="nf-heading text-center">
+                                        Лучше всего подходит для
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-7">
+                                            <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                <label for="" class="mw-60">Цель</label>
+                                                <select name="" id="" class="custom-select border-bl"></select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 pl-0">
+                                            <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                <select name="" id="" class="custom-select"></select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                <label for="" class="mw-60">Возраст</label>
+                                                <select name="" id="" class="custom-select border-bl"></select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 pl-0">
+                                            <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                <select name="" id="" class="custom-select"></select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                <label for="" class="mw-60">Инвест.</label>
+                                                <select name="" id="" class="custom-select border-bl"></select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 pl-0">
+                                            <div class="d-flex justify-content-start align-items-center  mb-2">
+                                                <select name="" id="" class="custom-select"></select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6 pr-1">
+                                            <a href="#" class="btn-nf">Сохранить Проект и продолжить ввод</a>
+                                        </div>
+                                        <div class="col-md-6 pl-1">
+                                            <a href="#" class="btn-nf ">Сохранить Проект и продолжить ввод</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- right column end -->
+                    </div><!--  .row -->
+                </div>
+            </div>
+        </div>
+        <!--clients1 -->
+        <div class="tab-pane fade " id="clients2" role="tabpanel" aria-labelledby="clients2-tab">
+            <!--////////////////////  Просмотр - Работа ///////////////////-->
+            <!--//////////////////// -->
+        </div>
+        <!--clients2 -->
+        <div class="tab-pane fade" id="clients3" role="tabpanel" aria-labelledby="clients3-tab">
+        </div>
+        <!--clients3 -->
+    </div>
+</div>

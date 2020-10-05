@@ -1,0 +1,85 @@
+.fixed-layout .sidebar{
+  width: 190px;
+  -ms-flex: 0 0 190px;
+  flex: 0 0 190px;
+  max-width: 190px;
+}
+
+.sidebar-inner a{
+  display:block;
+  
+  padding:12px 5px;
+  font-size: 14px;
+line-height: 17px;
+color: #000000;
+text-decoration:none;
+margin-bottom:0px;
+}
+.sidebar-inner a.btn{
+  font-weight: normal;
+font-size: 12px;
+width:160px;
+line-height:40px;
+padding:0px;
+color:#fff;
+margin-bottom:30px;
+}
+.sidebar-inner a img{
+  display:inline-block;
+  margin-right:10px;
+  vertical-align: middle;
+}
+.sidebar-inner a.clients:hover, .sidebar-inner a.clients.active{
+  background: #F4BC8D;
+}
+.sidebar-inner a.calendar:hover, .sidebar-inner a.calendar.active{
+  background: #F0E591;
+}
+.sidebar-inner a.case.active, .sidebar-inner a.case:hover{
+   background: #E3F2FD;
+}
+.sidebar-inner a.file.active, .sidebar-inner a.file:hover{
+   background: #DDB78A;
+}
+.sidebar-inner a.collaboration.active, .sidebar-inner a.collaboration:hover{
+   background: #FEE4B7;
+}
+.sidebar-inner a.planning.active, .sidebar-inner a.planning:hover{
+   background: #C0C0C0;
+}
+.sidebar-inner a.info-help.active, .sidebar-inner a.info-help:hover{
+   background: #FD7F57;
+}
+.sidebar-inner a.gears.active, .sidebar-inner a.gears:hover{
+   background: #92CBF7;
+}
+.sidebar-inner a.mail.active, .sidebar-inner a.mail:hover{
+   background: #A6D5A8;
+}
+.sidebar-inner a.agreement.active, .sidebar-inner a.agreement:hover{
+  background: #C1FFF0;
+}
+.sidebar .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  
+}
+.sidebar .navbar-toggler {
+  background-color:#fff;
+  margin-bottom:15px;
+  margin-left:auto;
+  margin-right:auto;
+  display: block;
+}
+.sidebar .navbar-toggler span{
+  margin-right:15px;
+}
+@media (min-width: 992px){
+ .sidebar .navbar-toggler {
+      display: none;
+  }
+}
+@media (max-width:768px){
+  .sidebar-inner{
+    display:none;
+  }
+}

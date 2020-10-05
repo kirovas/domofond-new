@@ -1,0 +1,85 @@
+.in_page header{
+  background:#fff;
+}
+.header-text{
+  margin-left:60px;
+  padding-top: 10px;
+}
+.header-text p{
+  font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+margin-bottom:10px;
+color: #434343;
+
+}
+.header-text p a{
+  text-decoration:none;
+  color: #000000;
+  font-weight:400;
+}
+.header-text p a span{
+  font-size:30px;
+  margin-right:10px;
+  display:inline-block;
+  line-height: 15px;
+  vertical-align: top;
+}
+
+.header-info span{
+  font-size: 12px;
+line-height: 15px;
+color: #000000;
+display:inline-block;
+vertical-align: top;
+margin-left:15px;
+}
+.header-info p{
+  font-size: 12px;
+line-height: 15px;
+color: #000000;
+}
+.header-info .user-info{
+  display:inline-block;
+  vertical-align: top;
+  padding-left:35px;
+}
+.header-info .user-info span{
+  margin-left:0px;
+}
+.header-info .user-info a{
+  font-size: 12px;
+line-height: 15px;
+color: #000000;
+}
+@media (min-width:990px) and (max-width: 1200px){
+  .header-info .user-info{
+    padding-left: 15px;
+  }
+}
+@media (max-width: 990px){
+  .header-text{
+        margin-left: 0px;
+        text-align:center;
+  }
+  .header-info{
+    margin-top:20px;
+    text-align:center;
+  }
+  .header-info > span{
+    width:31%;
+  }
+  .header-info .user-info{
+    width:31%;
+    padding-left: 15px;
+  }
+}
+@media (max-width: 600px){
+  .header-info > span{
+    width:100%;
+    margin-left:0px;
+  }
+  .header-info .user-info{
+    width:100%;
+  }
+}
